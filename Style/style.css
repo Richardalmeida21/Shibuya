@@ -39,28 +39,29 @@ main {
     gap: 1rem;
     max-width: 100%;
 
-    & h1 {
-        font-family: 'TrendSansFive';
-        font-size: clamp(2.5rem, 5vw, 5rem);
-        font-weight: bold;
-        color: var(--font-white);
-        animation: neon-piscar 1.5s infinite alternate;
-    }
+}
 
-    & h2 {
-        font-size: clamp(2rem, 4vw, 4rem);
-        color: var(--font-white);
-    }
+.container-textos h1 {
+    font-family: 'TrendSansFive';
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    font-weight: bold;
+    color: var(--font-white);
+    animation: neon-piscar 1.5s infinite alternate;
+}
 
-    & h3 {
-        font-size: clamp(1.5rem, 2vw, 2.5rem);
-        color: var(--font-white);
-    }
+.container-textos h2 {
+    font-size: clamp(2rem, 4vw, 4rem);
+    color: var(--font-white);
+}
 
-    & .font-sec {
-        font-family: 'TrendSansOne';
-        color: var(--font-white);
-    }
+.container-textos h3 {
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    color: var(--font-white);
+}
+
+.font-sec {
+    font-family: 'TrendSansOne';
+    color: var(--font-white);
 }
 
 .container-cta {
@@ -69,40 +70,41 @@ main {
     height: auto;
     color: var(--font-white);
 
-    & p {
-        font-size: 2vw;
-        font-family: 'TTinterphaces';
-        letter-spacing: 2px;
-        margin-top: .5vw;
-    }
+}
 
-    & .strong {
-        font-weight: bolder;
-    }
+.container-cta p {
+    font-size: 2vw;
+    font-family: 'TTinterphaces';
+    letter-spacing: 2px;
+    margin-top: .5vw;
+}
 
-    & a {
-        font-family: Opensauce;
-        font-weight: bold;
-        font-size: 1vw;
-        text-decoration: none;
-        color: var(--font-black);
-        background-color: var(--btn-green);
-        margin: 2vw 0;
-        border-radius: .5rem;
-        padding: 2vw;
-    }
+.strong {
+    font-weight: bolder;
+}
 
-    .text-envio {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        font-size: 1.5vw;
-    }
+.container-cta a {
+    font-family: Opensauce;
+    font-weight: bold;
+    font-size: 1vw;
+    text-decoration: none;
+    color: var(--font-black);
+    background-color: var(--btn-green);
+    margin: 2vw 0;
+    border-radius: .5rem;
+    padding: 2vw;
+}
 
-    .text-envio i {
-        font-size: 3vw;
-    }
+.text-envio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5vw;
+}
+
+.text-envio i {
+    font-size: 3vw;
 }
 
 
@@ -110,11 +112,11 @@ main {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
 
-    video {
-        width: auto;
-        height: 100vh;
-    }
+video {
+    width: auto;
+    height: 100vh;
 }
 
 .container-logo {
@@ -123,18 +125,15 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+}
 
+.container-logo .logo {
+    margin-top: 3vh;
+    height: 20vh;
+}
 
-    .logo {
-        margin-top: 3vh;
-        height: 20vh;
-    }
-
-    .shibuya {
-        height: 70vh;
-    }
-
-
+.container-logo .shibuya {
+    height: 70vh;
 }
 
 /*_____CONTEUDO SECUNDARIO (IMAGENS E CTA SITE)_____*/
@@ -173,17 +172,20 @@ main {
     padding: 2vw;
     max-width: 100%;
 
-    & .img-leds {
-        width: 31vw;
-        height: 50vh;
-        border-radius: 1rem;
-    }
+    
+    
+}
 
-    & .img-violao {
-        width: 31vw;
-        height: 60vh;
-        border-radius: 1rem;
-    }
+.img-violao {
+    width: 31vw;
+    height: 60vh;
+    border-radius: 1rem;
+}
+
+.img-leds {
+    width: 31vw;
+    height: 50vh;
+    border-radius: 1rem;
 }
 
 .container-text-cta2 {
