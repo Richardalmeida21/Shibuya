@@ -5,8 +5,8 @@
 }
 
 @font-face {
-    font-family: "TrendSansFive";
-    src: url("../Fonts/font-trend-sans-five.otf") format("opentype");
+    font-family: 'TrendSansFive';
+    src: url('../Fonts/font-trend-sans-five.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
   }
@@ -22,15 +22,15 @@
 }
 
 @font-face {
-  font-family: "TTinterphaces";
-  src: url("../Fonts/TT Interphases Pro Trial Regular.ttf") format("opentype");
+  font-family: 'TTinterphaces';
+  src: url('../Fonts/TT\ Interphases\ Pro\ Trial\ Regular.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Opensauce";
-  src: url("../Fonts/OpenSauceOne-Regular.ttf") format("opentype");
+  font-family: 'Opensauce';
+  src: url('../Fonts/OpenSauceOne-Regular.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }

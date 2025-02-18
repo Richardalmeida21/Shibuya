@@ -42,7 +42,7 @@ main {
 }
 
 .container-textos h1 {
-    font-family: "TrendSansFive";
+    font-family: 'TrendSansFive';
     font-size: clamp(2.5rem, 5vw, 5rem);
     font-weight: bold;
     color: var(--font-white);
@@ -60,7 +60,7 @@ main {
 }
 
 .font-sec {
-    font-family: "TrendSansOne";
+    font-family: 'TrendSansOne';
     color: var(--font-white);
 }
 
@@ -74,7 +74,7 @@ main {
 
 .container-cta p {
     font-size: 2vw;
-    font-family: "TTinterphaces";
+    font-family: 'TTinterphaces';
     letter-spacing: 2px;
     margin-top: .5vw;
 }
@@ -84,7 +84,7 @@ main {
 }
 
 .container-cta a {
-    font-family: "Opensauce";
+    font-family: Opensauce;
     font-weight: bold;
     font-size: 1vw;
     text-decoration: none;
@@ -213,7 +213,7 @@ video {
 .container-text-cta2 p {
     font-size: clamp(1.5rem, 2vw, 2rem);
     font-weight: bolder;
-    font-family: "TTinterphaces";
+    font-family: 'TTinterphaces';
     
 }
 
@@ -221,7 +221,7 @@ video {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "TTinterphaces";
+    font-family: 'TTinterphaces';
     gap: .5rem;
     
 }
@@ -241,7 +241,7 @@ video {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    font-family: "TTinterphaces";
+    font-family: 'TTinterphaces';
 }
 
 .cta2 p {
@@ -255,7 +255,7 @@ video {
     color: var(--font-black);
     padding: 1vw;
     border-radius: .5rem;
-    font-family: "Opensauce";
+    font-family: 'Opensauce';
     font-size: clamp(1rem, 1.2vw, 1.5rem);
     font-weight: bold;
 }
@@ -311,12 +311,12 @@ video {
 
 .container-contador p {
     font-size: 1.5vw;
-    font-family: "TTinterphaces";
+    font-family: 'TTinterphaces';
     font-weight: bolder;
 }
 
 .container-sobre-contador {
     max-width: 25vw;
     font-size: 1.5vw;
-    font-family: "TTinterphaces";
+    font-family: 'TTinterphaces';
 }
