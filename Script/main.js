@@ -1,30 +1,20 @@
-document.addEventListener("DOMContentLoaded", function() {
-    function animaNumeros() {
-        const numeros = document.querySelectorAll('.numero');
-        numeros.forEach(numero => {
-            const max = parseInt(numero.getAttribute('data-max'));
-            let start = 0;
-            const increment = Math.ceil(max / 100); // Velocidade da animação
-            const intervalo = setInterval(() => {
-                start += increment;
-                if (start >= max) {
-                    start = max;
-                    clearInterval(intervalo);
-                }
-                numero.textContent = `+${start}`;
-            }, 20);
-        });
-    }
-
-    function verificaVisibilidade() {
-        const secao = document.querySelector('.contadores');
-        const posicao = secao.getBoundingClientRect().top;
-        const tela = window.innerHeight;
-        if (posicao < tela) {
-            animaNumeros();
-            window.removeEventListener('scroll', verificaVisibilidade);
+// Criando o observador
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        // Verifica se o elemento está visível
+        if (entry.isIntersecting) {
+            // Quando o elemento entra na tela, adiciona a classe para ativar a animação de fade-in
+            entry.target.classList.add('visivel');
+            // Para de observar após a animação
+            observer.unobserve(entry.target);
         }
-    }
+    });
+}, { threshold: 0.5 });  // O 0.5 significa que 50% do elemento precisa estar visível
 
-    window.addEventListener('scroll', verificaVisibilidade);
+// Selecionando todos os elementos que devem ser observados
+const elementos = document.querySelectorAll('.contador'); // Seleciona a div inteira
+
+// Iniciando a observação para cada elemento
+elementos.forEach(elemento => {
+    observer.observe(elemento);
 });

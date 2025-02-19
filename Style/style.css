@@ -291,7 +291,9 @@ video {
     background-color: var(--background); /* Mude conforme sua paleta */
 }
 
+/* Estilo para a div .contador */
 .contador {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -300,23 +302,111 @@ video {
     background-color: var(--background-rosa-transparent);
     padding: 2vw;
     border-radius: 2vw;
+    border: 2px solid transparent; 
+    opacity: 0; /* Começa invisível */
+    transform: translateY(-20px); /* Começa deslocado */
+    transition: transform 0.3s ease; /* Transição suave para o hover */
 }
 
-.contador .numero {
-    font-size: 3rem;
-    font-weight: bold;
-    display: block;
-    color: var(--font-white);
-}
-
+/* Estilo do texto (títulos) */
 .container-contador p {
     font-size: 1.5vw;
     font-family: 'TTinterphaces';
     font-weight: bolder;
 }
 
+/* Efeito hover clean: aumento de tamanho e borda */
+.contador:hover {
+    transform: scale(1.05); /* Leve aumento de tamanho */
+    border: 2px solid #8a2be2; /* Brilho roxo sutil para o hover */
+}
+
+
+/* Ajustes para a descrição */
 .container-sobre-contador {
     max-width: 25vw;
     font-size: 1.5vw;
     font-family: 'TTinterphaces';
+    color: var(--font-white); /* Manter a cor do texto */
+    transition: color 0.3s ease; /* Transição suave para a cor */
+}
+
+/* Quando a div se tornar visível, aplica a animação de fade-in */
+.contador.visivel {
+    opacity: 1;
+    transform: translateY(0); /* Finaliza no seu lugar original */
+    animation: fadeIn 1.5s ease-out forwards; /* Animação de fade-in */
+}
+
+.footer {
+    background-color: var(--background);
+    color: var(--font-white);
+    text-align: center;
+    padding: 30px 20px;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);
+    border-top: 2px solid var(--btn-green);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.footer-content h3 {
+    font-family: 'TrendSansFive';
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow: 
+      0 0 5px var(--btn-green),
+      0 0 10px var(--btn-green),
+      0 0 15px var(--btn-green);
+    animation: neon-piscar 2s infinite;
+}
+
+.footer-content p {
+    font-family: 'TTinterphaces';
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.footer-socials {
+    margin: 15px 0;
+}
+
+.footer-socials .social-link {
+    color: var(--btn-green);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+    font-family: 'Opensauce';
+    font-size: 1.2rem;
+}
+
+.footer-socials .social-link:hover {
+    color: var(--font-white);
+}
+
+.footer-copy {
+    font-size: 0.8rem;
+    color: var(--font-white);
+    opacity: 0.7;
+}
+
+.footer-socials .social-link {
+    color: var(--btn-green);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+    font-family: 'Opensauce';
+    font-size: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Espaço entre ícone e texto */
+}
+
+.footer-socials .social-link i {
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.footer-socials .social-link:hover i {
+    transform: scale(1.2);
 }
