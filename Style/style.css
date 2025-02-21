@@ -36,7 +36,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: clamp(0.5rem, 2vw, 1.5rem);
     max-width: 100%;
 
 }
@@ -55,7 +55,7 @@ main {
 }
 
 .container-textos h3 {
-    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    font-size: clamp(1rem, 2vw, 2.5rem);
     color: var(--font-white);
 }
 
@@ -86,13 +86,13 @@ main {
 .container-cta a {
     font-family: Opensauce;
     font-weight: bold;
-    font-size: 1vw;
     text-decoration: none;
     color: var(--font-black);
     background-color: var(--btn-green);
     margin: 2vw 0;
     border-radius: .5rem;
-    padding: 2vw;
+    font-size: 1rem;
+    padding: clamp(.5rem, 1rem, 1.5rem);
 }
 
 .text-envio {
@@ -104,8 +104,9 @@ main {
 }
 
 .text-envio i {
-    font-size: 3vw;
+    font-size: clamp(1.5rem, 3vw, 5rem);
 }
+
 
 
 .container-left {
@@ -171,8 +172,6 @@ video {
     gap: 1rem;
     padding: 2vw;
     max-width: 100%;
-
-    
     
 }
 
@@ -228,12 +227,12 @@ video {
 
 .inf-cta2 h2 {
     font-weight: 200;
-    font-size: clamp(2rem, 2.5vw, 3.5rem)
+    font-size: clamp(1.5rem, 2.5vw, 3.5rem)
 }
 
 .inf-cta2 h3 {
     font-weight: bold;
-    font-size: clamp(1.5rem, 2vw, 3rem)
+    font-size: clamp(1.2rem, 2vw, 3rem)
 }
 
 .cta2 {
@@ -245,20 +244,20 @@ video {
 }
 
 .cta2 p {
-    font-size: clamp(1.5rem, 2vw, 2rem)
+    font-size:2vw;
 }
 
 .cta2 a {
     text-decoration: none;
-    color: var(--font-white);
     background-color: var(--btn-green);
     color: var(--font-black);
-    padding: 1vw;
+    padding: 1rem; /* Ajuste responsivo para o padding */
     border-radius: .5rem;
     font-family: 'Opensauce';
-    font-size: clamp(1rem, 1.2vw, 1.5rem);
+    font-size: 1rem; /* Ajuste responsivo para o font-size */
     font-weight: bold;
 }
+
 
 /*_____SESSÃO SOBRE A SHIBUYA_____*/
 
@@ -309,7 +308,7 @@ video {
 }
 
 /* Estilo do texto (títulos) */
-.container-contador p {
+.container-contador h3 {
     font-size: 1.5vw;
     font-family: 'TTinterphaces';
     font-weight: bolder;

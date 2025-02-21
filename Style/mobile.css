@@ -1,0 +1,199 @@
+/*_____CONFIGURAÇÕES MOBILE_____*/
+
+@media (max-width: 768px) {
+
+    /* Ajustando a apresentação inicial para telas menores */
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container-right {
+        padding-left: 0;
+        text-align: center;
+        margin: 5rem 0;
+        gap: 1rem;
+    }
+
+    .container-cta a {
+        margin: 1.5rem 0;
+        font-size: .5rem;
+    }
+
+    .container-cta p {
+        font-size: 4vw;
+    }
+
+
+    .container-left {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .logo-mobile .shibuya {
+        max-width: 60vw;
+    }
+
+    .logo-mobile .logo {
+        max-height: 8vh;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+
+    .container-logo {
+        display: none;
+    }
+
+
+    /* Ajustando o conteúdo secundário */
+    .container-cta2 {
+        padding: 2rem;
+        flex-direction: column;
+    }
+
+    .gradiente-secundario {
+        display: none;
+    }
+
+    .container-images {
+        padding: 4vw;
+    }
+
+    .img-violao, .img-leds {
+        width: 80vw;  /* Reduzindo o tamanho das imagens */
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    .container-text-cta2 {
+        height: auto;
+    }
+
+    .container-text-cta2 p {
+        font-size: 1.2rem;
+    }
+
+    .cta2 a {
+        padding: .2rem;
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+
+    .cta2 p {
+        font-size: 1rem;
+    }
+
+
+    /* Ajustes para a seção sobre a Shibuya */
+    .container-apresentacao .shibuya {
+        max-width: 60vw; /* Reduzindo o tamanho da imagem */
+    }
+
+    .container-apresentacao .logo {
+        height: 8vh; /* Reduzindo o tamanho da imagem */
+    }
+
+    .contadores {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .contador {
+        width: 80vw;  /* Tornando os contadores mais largos */
+        padding: 1rem;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .container-contador h3 {
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+
+    .container-sobre-contador {
+        width: 100%; /* Faz o container ocupar toda a largura da tela */
+        max-width: 100%; /* Garante que não ultrapasse a largura */
+        padding: 1rem; /* Remove o padding, deixando o texto mais próximo das bordas */
+        margin: 0; /* Remove a margem */
+        box-sizing: border-box; /* Certifica-se de que a largura seja calculada corretamente */
+    }
+
+    .container-sobre-contador p {
+        font-size: 1rem; /* Ajusta o tamanho da fonte para maior legibilidade */
+        padding: 0; /* Remove qualquer padding no parágrafo */
+        margin: 0; /* Remove a margem */
+        word-wrap: break-word; /* Garante que palavras longas quebrem */
+    }
+
+
+    .footer {
+        padding: 20px;
+        font-size: 0.9rem;
+    }
+
+    .footer-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer-content p {
+        font-size: 1rem;
+    }
+
+    .footer-socials .social-link {
+        font-size: .8rem;
+    }
+
+    .footer-socials .social-link i {
+        font-size: .8rem;
+    }
+}
+
+/* Estilos para telas menores que 480px (como smartphones pequenos) */
+@media (max-width: 480px) {
+
+    .container-cta p {
+        font-size: 5vw;
+    }
+
+    .container-cta a {
+        font-size: 4vw;
+        padding: 5vw;
+    }
+
+    .img-violao, .img-leds {
+        width: 90vw;  /* Ajuste para telas pequenas */
+    }
+
+    .container-text-cta2 {
+        padding: 5vw;
+    }
+
+    .cta2 a {
+        padding: 2vw; /* Menor padding para botões */
+        font-size: 4vw; /* Ajuste do font-size para o botão */
+        margin: 1rem 0;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+
+    .footer-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .footer-content p {
+        font-size: 0.9rem;
+    }
+}

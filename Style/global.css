@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.logo-mobile {
+    display: none;
+}
+
 @font-face {
     font-family: 'TrendSansFive';
     src: url('../Fonts/font-trend-sans-five.otf') format('opentype');
